@@ -22,9 +22,8 @@ func main() {
 		},
 	}
 	jim.print()
-	pJim := &jim
 
-	pJim.update("Alex")
+	jim.update("Alex")
 	jim.print()
 
 }
