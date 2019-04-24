@@ -21,13 +21,20 @@ func main() {
 			zipCode: 90501,
 		},
 	}
+	names := []string{"Hello", "You're", "the", "best."}
+
 	jim.print()
 
 	jim.update("Alex")
 	jim.print()
 
+	updateStr(names)
+	fmt.Println(names)
 }
 
+func updateStr(s []string) {
+	s[0] = "Puppy"
+}
 func (p *person) update(firstName string) {
 	(*p).firstName = firstName
 }
