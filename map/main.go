@@ -15,4 +15,11 @@ func main() {
 	fmt.Println(colors)
 	fmt.Println(colors1)
 	fmt.Println(colors2)
+	printMap(colors)
+}
+
+func printMap(c map[string]string) {
+	for color, hex := range c {
+		fmt.Printf("%s %s\n", color, hex)
+	}
 }
